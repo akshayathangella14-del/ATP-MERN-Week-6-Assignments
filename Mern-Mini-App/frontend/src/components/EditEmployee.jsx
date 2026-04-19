@@ -33,7 +33,7 @@ const navigate = useNavigate();
   try {
   setLoading(true);
   //make HTTP PUT req
-  const res=await axios.put(`http://localhost:4000/employee-api/employees/${state._id}`,modifiedEmp)
+  const res=await axios.put(`https://mini-mern-app-fiz9.onrender.com/employee-api/employees/${state._id}`,modifiedEmp)
    if (res.status === 200) {
         //navigate to employees component programatically
         navigate("/list");
