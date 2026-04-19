@@ -9,9 +9,7 @@ import cors from 'cors'
 config()
 
 const app = exp()
-app.use(cors({
-    origin: ['http://localhost:5173', 'https://your-vercel-app-name.vercel.app']
-}))
+app.use(cors());
 app.use(exp.json())
 
 
