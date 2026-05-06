@@ -1,5 +1,3 @@
-This detailed documentation covers the Week 6 assignments of the ATP MERN program. This week transitions from foundational frontend styling to **advanced React state management**, **client-side routing**, and the implementation of a **Mini-MERN Full-Stack Application**.
-
 # Week 6: Advanced React & MERN Integration
 
 This repository contains three distinct projects that demonstrate advanced concepts in full-stack development, ranging from local state hooks to global state management and persistent backend integration.
