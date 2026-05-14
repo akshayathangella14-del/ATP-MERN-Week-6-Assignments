@@ -21,7 +21,7 @@ function ListOfEmps() {
   }
 
   const deleteEmpByID=async(id)=>{
-    let res=await axios.delete(`https://mini-mern-app-fiz9.onrender.com/employee-api/employees/${id}`,deleteEmpByID)
+    let res=await axios.delete(` https://atp-mern-week-6-assignments.onrender.com/employee-api/employees/${id}`,deleteEmpByID)
     if(res.status===200){
       //get latest emps data
      getEmps();
@@ -32,7 +32,7 @@ function ListOfEmps() {
   async function getEmps(){
      try {
      setLoading(true);
-      let res = await fetch('https://mini-mern-app-fiz9.onrender.com/employee-api/employees')
+      let res = await fetch(' https://atp-mern-week-6-assignments.onrender.com/employee-api/employees')
       if(res.status===200){
         let resObj=await res.json()
         setEmps(resObj.payload)
