@@ -22,7 +22,7 @@ function CreateEmp() {
       setLoading(true);
       //make HTTP POST req
       console.log("Payload being sent:", newEmpObj);
-      let res = await fetch("https://mini-mern-app-fiz9.onrender.com/employee-api/employees", {
+      let res = await fetch(" https://atp-mern-week-6-assignments.onrender.com/employee-api/employees", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(newEmpObj),
