@@ -9,9 +9,13 @@ import cors from 'cors'
 config()
 
 const app = exp()
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://atp-mern-week-6-assignments.vercel.app",
+    credentials: true,
+  })
+);
 app.use(exp.json())
-
 
 app.use("/employee-api", employeeApp)
 
